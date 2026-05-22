@@ -74,6 +74,6 @@ In the future, I may improve it by adding:
 
 ## Author
 
-            Created by **Plogramist**  
+Created by **Plogramist**  
 
 GitHub: [@Plogramist](https://github.com/Plogramist)
