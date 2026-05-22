@@ -9,6 +9,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+
 }
 
             /* Top-section */
@@ -19,17 +20,20 @@ body {
                 padding: 1rem 15rem;
                 margin: auto;
                 gap: 2rem;
+
                 
             }
 
             .app-title {
                 font-size: 1rem;
                 font-weight: bold;
+
             }
 
             .app-subtitle {
                 font-size: 0.875rem;
                 color: #555;
+
             }
 
             /* !!!Mode Toggle - glass panel affect needed */
@@ -42,29 +46,34 @@ body {
                 background-color: rgb(255, 255, 255);
                 gap: 1.5rem;
                 border-radius: 32px;
+        
             }
 
 /* Top-section Images-icons */
 
 .sun-cloud-icon{
     gap: 1rem;
+
 }
 
 .weather-icon {
     width: 5rem;
     height: 5rem;
+
 }
 
 .light-mode {
     gap:1rem;
     width: 1.5rem;
     height: 1.5rem;
+
 }
 
 .dark-mode {
     gap:1rem;
     width: 1.5rem;
     height: 1.5rem;
+
 }
 
             /* Main-section */
@@ -81,6 +90,7 @@ body {
                 backdrop-filter: blur(18px);
                 -webkit-backdrop-filter: blur(18px);
                 border-radius: 16px;
+
             }
 
             .headline-container {
@@ -89,6 +99,7 @@ body {
                 width: 50%;
                 margin: 2rem auto;
                 font-size: 0.865rem;
+
             }
 
             .search-container {
@@ -96,6 +107,7 @@ body {
                 flex-direction: column;
                 width: 50%;
                 margin: 2rem auto;
+
             }
 
             .weather-display-container {
@@ -105,20 +117,24 @@ body {
                 box-shadow: 0 18px 50px #1f4e791f;
                 backdrop-filter: blur(14px);
                 -webkit-backdrop-filter: blur(14px);
-                border-radius: 16px;
-                margin: 1rem 1rem;
+                border-radius: 16px 16px 6px 6px;
+
+                margin: 0rem 1rem 0rem 1rem;
+
             }
 
             .weather-display {
-                display: flex;
-                flex-direction: row;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
                 align-items: center;
                 gap: 2rem;
+
             }
 
             #weather-icon {
                 width: 12rem;
                 height: 12rem;
+
             }
 
                         /* Weather Details */
@@ -128,13 +144,13 @@ body {
                             gap: 1rem;
                             padding: 1rem 1.6rem 1.6rem;
 
-                            
                         }
 
                         .weather-description-icon {
                             width: 1.5rem;
                             height: 1.5rem;
                             flex-shrink: 0;
+
                         }
 
                         .weather-description {
@@ -146,12 +162,14 @@ body {
                             padding: 0.85rem;
                             background: rgba(230, 244, 252, 0.7);
                             border-radius: 12px;
+
                         }
 
                         .weather-description h3 {
                             margin: 0 0 0.25rem;
                             font-size: 0.8rem;
                             font-weight: 600;
+
                         }
 
                         #feels-like, #humidity, #wind-speed, #pressure {
@@ -159,6 +177,7 @@ body {
                             color: #000000;
                             margin: 0;
                             font-weight: 700;
+
                         }
 
                         @media (max-width: 1100px) {
@@ -175,7 +194,43 @@ body {
 
             /* Forecast Cards */
 
+            .forecast {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 1rem;
+                margin: 0.6rem 1rem 1rem 1rem;
 
+
+                background: #ffffff6b;
+                border: 1px solid #ffffffb3;
+                box-shadow: 0 10px 30px #1f4e7914;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-radius: 6px 6px 16px 16px;
+
+            }
+
+            .card-1, .card-2, .card-3, .card-4, .card-5, .day-month{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 12px;
+                background: #ffffff8c;
+
+                margin: 1rem 0;
+            }
+
+            .temp-range {
+                display: grid; 
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1rem;
+            }
+            
+            .card1-icon, .card2-icon, .card3-icon, .card4-icon, .card5-icon {
+                width: 3rem;
+                height: 3rem;
+
+            }
 
             /* Footer */
 
@@ -183,4 +238,5 @@ body {
                 display: flex;
                 justify-content: center; 
                 align-items: center;
+
             }
