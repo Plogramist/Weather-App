@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        >
+
+        <title>Weather App</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/main.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Header navigation -->
+        <nav class="top-section">
+            
+            <div class="sun-cloud-icon">
+                <img src="./assets/sun-behind-cloud.svg" alt="weather icon" class="weather-icon">
+            </div>
+
+            <div class="app-name">
+                <h1 class="app-title">Weather App</h1>
+                <h2 class="app-subtitle">Check the weather, plan your day.</h2>
+            </div>
+
+            <!-- Theme toggle -->
+            <form class="mode-toggle-container">
+                <img src="./assets/light-mode.svg" alt="light mode icon" class="light-mode">
+                <button id="mode-toggle" type="checkbox">Light Mode</button>
+                <img src="./assets/dark-mode.svg" alt="dark mode icon" class="dark-mode">
+            </form>
+
+        </nav>
+
+        <main class="main-section">
+            <!-- Search section -->
+            <div class="headline-container">
+                <h1>What`s the weather like today?</h1>
+                <h2>Search for a city and get the latest weather.</h2>
+            </div>
+
+            <form class="search-container">
+                <input id="city-input" type="text" placeholder="Enter city name...">
+                <button id="search-button" type="submit">Search</button>
+            </form>
+
+            <!-- Weather data rendered by JavaScript -->
+            <section class="weather-display-container">
+
+                <section class="weather-display">
+                    <div class="weather-info">
+                        <h2 id="city-name">City Name</h2>
+
+                        <h3 id="date">Day, Month Date * Time </h3>
+
+                        <p id="temperature">Temperature: --°C</p>
+                        <p id="description">Description: --</p>
+                    </div>
+
+                    <div class="weather-icon-container">
+                        <img id="weather-icon" src="./assets/sun-behind-cloud.svg" alt="Weather Icon" class="weather-icon">
+                    </div>
+                </section>
+
+                <section class="weather-details">
+                    <article class="weather-description">
+                        
+                        <img src="./assets/feels-like.svg" alt="Feels like icon" class="weather-description-icon"/>
+                        <div class="feels-like-container">
+                            <h3>Feels like</h3>
+                            <p id="feels-like">18°C</p>
+                        </div>
+                        
+                    </article>
+
+                    <article class="weather-description">
+
+                        <img src="./assets/humidity.svg" alt="Humidity icon" class="weather-description-icon"/>
+                        <div class="humidity-container">
+                            <h3>Humidity</h3>
+                            <p id="humidity">68%</p>
+                        </div>
+
+                    </article>
+
+                    
+                    <article class="weather-description">
+                        <img src="./assets/wind.svg" alt="Wind icon" class="weather-description-icon"/>
+                        <div class="wind-container">
+                            <h3>Wind</h3>
+                            <p id="wind-speed">12 km/h</p>
+                        </div>
+                    </article>
+
+                    <article class="weather-description">
+                        <img src="./assets/pressure.svg" alt="Pressure icon" class="weather-description-icon"/>
+                        <div class="pressure-container">
+                            <h3>Pressure</h3>
+                            <p id="pressure">1015 hPa</p>
+                        </div>
+                    </article>
+
+                </section>
+            </section>
+
+
+            <!-- Forecast section -->
+            <!--
+                <section class="forecast">
+                    <article class="card-1">
+                        
+                        <div class="day-month">
+                            <h3>Mon</h3>
+                            <p id="month">May 19</p>
+                        </div>
+
+                        <img src="./assets/sun-behind-cloud.svg" alt="Sunny day" class="card1-icon"/>
+
+                        <div class="temp-range">
+                            <p id="temp-range">18°C / 10°C</p>
+                        </div>
+
+                    </article>
+
+                    <article class="card-2">
+                        
+                        <div class="day-month">
+                            <h3>Tue</h3>
+                            <p id="month">May 20</p>
+                        </div>
+
+                        <img src="./assets/sun-behind-cloud.svg" alt="Sunny day" class="card2-icon"/>
+
+                        <div class="temp-range">
+                            <p id="temp-range">21°C / 11°C</p>
+                        </div>
+                        
+                    </article>
+
+                    <article class="card-3">
+                        
+                        <div class="day-month">
+                            <h3>Wed</h3>
+                            <p id="month">May 21</p>
+                        </div>
+
+                        <img src="./assets/sun-behind-cloud.svg" alt="Sunny day" class="card3-icon"/>
+
+                        <div class="temp-range">
+                            <p id="temp-range">16°C / 9°C</p>
+                        </div>
+                        
+                    </article>
+
+                    <article class="card-4">
+                        
+                        <div class="day-month">
+                            <h3>Thu</h3>
+                            <p id="month">May 22</p>
+                        </div>
+
+                        <img src="./assets/sun-behind-cloud.svg" alt="Sunny day" class="card4-icon"/>
+
+                        <div class="temp-range">
+                            <p id="temp-range">19°C / 12°C</p>
+                        </div>
+                        
+                    </article>
+
+                    <article class="card-5">
+                        
+                        <div class="day-month">
+                            <h3>Fri</h3>
+                            <p id="month">May 23</p>
+                        </div>
+
+                        <img src="./assets/sun-behind-cloud.svg" alt="Sunny day" class="card5-icon"/>
+
+                        <div class="temp-range">
+                            <p id="temp-range">22°C / 13°C</p>
+                        </div>
+                        
+                    </article>
+
+                </section>
+            -->
+
+        </main>
+
+        <footer>
+            <p>Created by Plogramist</p>
+        </footer>
+        
+    </body>
+
+</html>
