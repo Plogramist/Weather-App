@@ -9,10 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <title>Weather App</title>
 
@@ -22,31 +19,31 @@
 
 <body>
     <!-- Header navigation -->
-    <nav class="top-section">
+    <header class="top-section">
 
         <div class="sun-cloud-icon">
             <img src="./assets/sun-behind-cloud.svg" alt="weather icon" class="weather-icon">
         </div>
 
         <div class="app-name">
-            <h1 class="app-title">Weather App</h1>
-            <h2 class="app-subtitle">Check the weather, plan your day.</h2>
+            <h2 class="app-title">Weather App</h2>
+            <h3 class="app-subtitle">Check the weather, plan your day.</h3>
         </div>
 
         <!-- Theme toggle -->
-        <form class="mode-toggle-container">
-            <img src="./assets/light-mode.svg" alt="light mode icon" class="light-mode">
-            <button id="mode-toggle" type="button">Light Mode</button>
-            <img src="./assets/dark-mode.svg" alt="dark mode icon" class="dark-mode">
-        </form>
+        <div class="mode-toggle-container">
+            <img src="./assets/light-mode.svg" alt="" class="light-mode" aria-hidden="true">
+            <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+            <img src="./assets/dark-mode.svg" alt="" class="dark-mode" aria-hidden="true">
+        </div>
 
-    </nav>
+    </header>
 
     <main class="main-section">
         <!-- Search section -->
         <div class="headline-container">
-            <h1>What`s the weather like today?</h1>
-            <h2>Search for a city and get the latest weather.</h2>
+            <h1 id="headline">What`s the weather like today?</h1>
+            <h2 id="subtitle">Search for a city and get the latest weather.</h2>
         </div>
 
         <form class="search-container">
@@ -60,17 +57,16 @@
 
             <section class="weather-display">
                 <div class="weather-info">
-                    <h2 id="city-name">City Name</h2>
+                    <h2 id="city-name">New York</h2>
 
                     <h3 id="date">Day, Month Date * Time </h3>
 
-                    <p id="temperature">Temperature: --°C</p>
-                    <p id="description">Description: --</p>
+                    <p id="temperature">18°C</p>
+                    <p id="description">Partly cloudy</p>
                 </div>
 
-                <div class="weather-icon-container">
-                    <img id="weather-icon" src="./assets/sun-behind-cloud.svg" alt="Weather Icon" class="weather-icon">
-                </div>
+                    <img id="current-weather-icon" src="./assets/sun-behind-cloud.svg" alt="Weather Icon">
+
             </section>
 
             <section class="weather-details">
@@ -115,7 +111,7 @@
 
         <!-- Forecast section -->
         <section class="forecast">
-            <article class="card-1">
+            <article class="forecast-card">
 
                 <div class="day-month">
                     <h3>Mon</h3>
@@ -131,7 +127,7 @@
 
             </article>
 
-            <article class="card-2">
+            <article class="forecast-card">
 
                 <div class="day-month">
                     <h3>Tue</h3>
@@ -147,7 +143,7 @@
 
             </article>
 
-            <article class="card-3">
+            <article class="forecast-card">
 
                 <div class="day-month">
                     <h3>Wed</h3>
@@ -163,7 +159,7 @@
 
             </article>
 
-            <article class="card-4">
+            <article class="forecast-card">
 
                 <div class="day-month">
                     <h3>Thu</h3>
@@ -179,7 +175,7 @@
 
             </article>
 
-            <article class="card-5">
+            <article class="forecast-card">
 
                 <div class="day-month">
                     <h3>Fri</h3>
