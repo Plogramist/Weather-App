@@ -10,9 +10,11 @@ The main goal was to improve my skills in JavaScript, working with APIs, DOM man
 
 ## Screenshots 
 
-(Light theme, dark theme)
+Light theme and dark theme
 
 ![Weather App Screenshot](./assets/screenshot-lighttheme.png)
+
+----
 
 ![Weather App Screenshot](./assets/screenshot-darktheme.png)
 
