@@ -14,7 +14,7 @@ Light theme and dark theme
 
 ![Weather App Screenshot](./assets/screenshot-lighttheme.png)
 
-----
+##
 
 ![Weather App Screenshot](./assets/screenshot-darktheme.png)
 
