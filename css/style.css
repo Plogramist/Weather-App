@@ -41,9 +41,9 @@
     --detail-card-border: #BDECF2CC;
     --detail-card-shadow: inset 0 0.0625rem 0 #FFFFFFB3;
     --toggle-container-bg: #FFFFFF;
-    --toggle-light-bg: #FFD700;
-    --toggle-dark-bg: #000000;
-    --toggle-knob-bg: #FFFFFF;
+    --toggle-light-bg: #3d7bff;
+    --toggle-dark-bg: #FFD700;
+    --toggle-knob-bg: #FFD700;
     --input-bg: #FFFFFFF2;
     --input-focus-bg: #FFFFFF;
     --input-text: #000000;
@@ -87,9 +87,9 @@ body.dark-theme {
     --detail-card-border: #68B5D94D;
     --detail-card-shadow: inset 0 0.0625rem 0 #FFFFFF1A;
     --toggle-container-bg: #122237;
-    --toggle-light-bg: #FFD700;
-    --toggle-dark-bg: #111827;
-    --toggle-knob-bg: #EAF4FF;
+    --toggle-light-bg: #111827;
+    --toggle-dark-bg: #FFD700;
+    --toggle-knob-bg: #111827;
     --input-bg: #0F1F33E6;
     --input-focus-bg: #142A43;
     --input-text: #F4FAFF;
