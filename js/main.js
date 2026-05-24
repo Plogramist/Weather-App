@@ -1,3 +1,14 @@
+// Switching between light and dark themes
+
+const themeSwitch = document.querySelector("#switch");
+
+themeSwitch.addEventListener("change", () => {
+    document.body.classList.toggle("dark-theme", themeSwitch.checked);
+});
+
+
+// ---
+
 const searchForm = document.querySelector(".search-container");
 const cityInput = document.querySelector("#city-input");
 
@@ -10,3 +21,4 @@ const feelsLike = document.querySelector("#feels-like");
 const humidity = document.querySelector("#humidity");
 const windSpeed = document.querySelector("#wind-speed");
 const pressure = document.querySelector("#pressure");
+

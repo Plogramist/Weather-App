@@ -8,9 +8,13 @@ The main goal was to improve my skills in JavaScript, working with APIs, DOM man
 
 -- In development --
 
-## Screenshot
+## Screenshots 
 
-![Weather App Screenshot](./assets/screenshot.png)
+(Light theme, dark theme)
+
+![Weather App Screenshot](./assets/screenshot-lighttheme.png)
+
+![Weather App Screenshot](./assets/screenshot-darktheme.png)
 
 ## Features
 
