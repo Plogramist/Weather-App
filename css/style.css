@@ -276,25 +276,31 @@ body::before {
 }
 
 #city-name {
-    font-size: 1.875rem;
+    font-size: 2rem;
+    font-weight: 750;
+    color: #173A5E;
     width: fit-content;
 }
 
 #date {
-    font-size: 1rem;
-    color: #555555;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #5E7893;
     width: fit-content;
 }
 
 #temperature {
-    font-size: 4.25rem;
-    font-weight: 500;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #102F52;
     margin: 1rem;
     width: fit-content;
 }
 
 #description {
-    font-size: 1.25rem;
+    font-size: 1.1875rem;
+    font-weight: 600;
+    color: #3F6F8E;
     width: fit-content;
 }
 
@@ -332,8 +338,8 @@ body::before {
 }
 
 .weather-description-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     flex-shrink: 0;
 }
 
@@ -383,8 +389,14 @@ body::before {
                 align-items: center;
             }
 
+            #month-1, #month-2, #month-3, #month-4, #month-5 {
+                font-size: 1rem;
+                color: #555555;
+            }
+
             .temp-range {
                 display: grid;
+                font-size: 1rem;
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 1rem;
             }
