@@ -10,7 +10,7 @@ The main goal was to improve my skills in JavaScript, working with APIs, DOM man
 
 ## Screenshot
 
-![Weather App Screenshot](./screenshot.png)
+![Weather App Screenshot](./assets/screenshot.png)
 
 ## Features
 
